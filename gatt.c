@@ -407,7 +407,7 @@ int main( int argc, char *argv[ ], char *envp[ ] )
 			}
 
 			//print the characeteristic Value
-			//for an HR monitor this might be the body sensor location
+			//for an BLE device this might be the sensor orientation
 			printf("\n Printing a read (not notifiable) characterstic (maybe) body sensor value");
 			for(int iii=0; iii< pCharValueBuffer->DataSize; iii++) {// ideally check ->DataSize before printing
 				printf("%d",pCharValueBuffer->Data[iii]); 
